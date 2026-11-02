@@ -1,0 +1,51 @@
+{
+  "name": "dsh-ptc-router",
+  "version": "0.1.0",
+  "description": "PTC router for DeepSeek Harness: picks PTC or native tool presentation per task and switches it live for the model or the user.",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "ptc",
+    "ptc-router",
+    "tool-presentation",
+    "run-code"
+  ],
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./classifier": "./classifier.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "bin": {
+    "dsh-ptc-classify": "./bin/classify.mjs"
+  },
+  "files": [
+    "index.js",
+    "classifier.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "bin/classify.mjs",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "compatibility": {
+      "dsh": ">=0.2.1-rc.2 <0.3.0-0"
+    }
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "spike": "node dev/presentation-harness.mjs",
+    "integration": "node dev/plugin-mount-harness.mjs",
+    "classify": "node bin/classify.mjs"
+  },
+  "license": "MIT"
+}

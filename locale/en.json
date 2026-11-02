@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "PTC Tool Mode Router",
+    "description": "Picks PTC or standard tool presentation per task and lets the model or user switch it at any time."
+  }
+}

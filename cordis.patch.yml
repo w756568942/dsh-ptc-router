@@ -1,0 +1,21 @@
+# dsh-ptc-router: one Host row.
+#
+# Every field is optional. The row inserts the router, which then owns the tool
+# presentation for each root agent it adopts.
+- insert:
+    - id: dsh-ptc-router
+      name: 'dsh-ptc-router'
+      config:
+        # Classify each new task and switch before its first model step.
+        auto: true
+        # Mode used before any task text exists, and by /mode auto when a
+        # session has no task text yet.
+        defaultMode: 'native'
+        # 'auto' classifies; 'native'/'ptc' force one mode for every session.
+        forceMode: 'auto'
+        # ptcScore - nativeScore must reach this to choose PTC.
+        threshold: 2
+        # One short prompt paragraph telling the model it may switch.
+        guidance: true
+        # Root agents only; subagents keep their preset's presentation.
+        applyToSubagents: false

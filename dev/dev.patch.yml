@@ -1,0 +1,10 @@
+# Development overlay: load the router straight from this workspace (no install).
+- insert:
+    - id: dsh-ptc-router
+      name: '../index.js'
+      config:
+        auto: true
+        defaultMode: 'native'
+        threshold: 2
+        guidance: true
+        applyToSubagents: false

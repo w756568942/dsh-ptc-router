@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Tool Mode Router">
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#1b1f2a"/>
+  <path d="M16 24h20" stroke="#7dd3fc" stroke-width="4" stroke-linecap="round"/>
+  <path d="M30 18l6 6-6 6" fill="none" stroke="#7dd3fc" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M48 40H28" stroke="#a7f3d0" stroke-width="4" stroke-linecap="round"/>
+  <path d="M34 34l-6 6 6 6" fill="none" stroke="#a7f3d0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="16" cy="24" r="3.5" fill="#7dd3fc"/>
+  <circle cx="48" cy="40" r="3.5" fill="#a7f3d0"/>
+</svg>
