@@ -1,11 +1,4 @@
 node_modules/
-.testhome/
-
-# local dev resolution link
-dev/node_modules
-
-# offline transfer artifact
-*.bundle
-
-# local tooling / credentials (never commit)
-.tools/
+.env
+.env.*
+.DS_Store
