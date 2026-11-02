@@ -4,6 +4,8 @@
 
 这是 DeepSeek Harness 的 Host 插件（bundle），零依赖，不需要构建。
 
+仓库：<https://github.com/w756568942/dsh-ptc-router>
+
 ---
 
 ## 为什么需要它
@@ -80,6 +82,10 @@ PTC 模式下同一工具以 SDK 绑定的形式出现：`tools.switch_tool_mode
 ### 方式 B：CLI 装入 profile
 
 ```sh
+# 从 GitHub 安装（git 通道）
+dsh plugin --profile web add github:w756568942/dsh-ptc-router
+
+# 或从本地目录安装
 dsh plugin --profile web add "file:/绝对路径/插件"
 ```
 

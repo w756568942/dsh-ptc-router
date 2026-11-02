@@ -2,6 +2,10 @@
   "name": "dsh-ptc-router",
   "version": "0.1.0",
   "description": "PTC router for DeepSeek Harness: picks PTC or native tool presentation per task and switches it live for the model or the user.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/w756568942/dsh-ptc-router.git"
+  },
   "keywords": [
     "deepseek-harness",
     "dsh",
